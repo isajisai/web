@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+	<head>
+		<title>jstut.html</title>
+		<meta charset="utf-8">
+		<script type="textjavascript"></script>
+	</head>
+	<body>
+		<p id="sayHello"> </p>
+
+		<script>
+
+		/**
+		var yourName = prompt("What is your name?");
+
+		if (yourName != null) {
+			document.getElementById("sayHello").innerHTML = "Hello " + yourName;
+		} else {
+			alert("Please enter a name next time.");
+		}
+		**/
+
+		
+		document.write("5 + 4 = ", 5 + 4, "<br/>");
+		document.write("5 * 4 = ", 5 * 4, "<br/>");
+		document.write("5 / 4 = ", 5 / 4, "<br/>");
+		document.write("5 - 4 = ", 5 - 4, "<br/>");
+		document.write("5 % 4 = ", 5 % 4, "<br/>");
+		document.write("(3 + 2) * 5 = ", (3 + 2) * 5, "<br/>");
+
+		document.write("Max Num = ", Number.MAX_VALUE, "<br/>");
+		document.write("Max Num = ", Number.MAX_VALUE, "<br/>");
+		document.write("Converted String: ", Number("3.14"), "<br/>");                                  
+		var balance = 1564;
+		document.write("Monthly Payment: ", (balance / 12).toFixed(2), "<br/>");
+
+		var randNum = 5;
+		document.write("randNum++ = ", randNum++, "<br/>");
+		document.write("++randNum = ", ++randNum, "<br/>");
+		document.write("randNum-- = ", randNum--, "<br/>");
+		document.write("--randNum = ", --randNum, "<br/>");
+
+		document.write("Random Number (1-10): ", Math.floor((Math.random() * 10) + 1), "<br/>");
+		document.write("Math.E = ", Math.E, "<br/>");
+		document.write("Math.PI = ", Math.PI, "<br/>");
+		document.write("Math.sqrt(1000) = ", Math.sqrt(1000), "<br/>");
+		document.write("Math.cbrt(1000) = ", Math.cbrt(1000), "<br/>");
+		document.write("Math.abs(-5) = ", Math.abs(-5), "<br/>");
+		document.write("Math.ceil(6.45) = ", Math.ceil(6.45), "<br/>");
+		document.write("Math.floor(6.45) = ", Math.floor(6.45), "<br/>");
+		document.write("Math.round(6.45) = ", Math.round(6.45), "<br/>");
+		document.write("Math.log(100) = ", Math.log(100), "<br/>");
+		document.write("Math.log10(100) = ", Math.log10(100), "<br/>");
+		document.write("Math.max(5, 2) = ", Math.max(5, 2), "<br/>");
+		document.write("Math.min(5, 2) = ", Math.min(5, 2), "<br/>");
+		document.write("Math.pow(5, 2) = ", Math.pow(5, 2), "<br/>");
+
+		var randStr = "A long string that " + "goes on and on";
+		document.write("String Length: ", randStr.length, "<br/>");
+		document.write("Index for \"goes\": ", randStr.indexOf("goes"), "<br/>");
+		document.write("From 19th to 23rd Index: ", randStr.slice(19, 23), "<br/>");
+		document.write("From 19th Index to End of randStr: ", randStr.slice(19), "<br/>");
+		document.write("Substring from 19th Index to 4 places right: ", randStr.substr(19, 4), "<br/>");
+		document.write("Replacing substrings: ", randStr.replace("and on", "forever"), "<br/>");
+
+		for (i = 0; i < 5; i++) {
+			document.write("This is iteration " + i, "<br/>");
+		}
+
+		function inArray(arrayToCheck, value) {
+			for (i = 0; i < arrayToCheck.length; i++) {
+				if (arrayToCheck[i] == value) {
+					return true;
+				}
+			}
+			return false;
+		}
+
+		function approx_eq(x, y, tolerance=1e-15) {
+			return (Math.abs(x - y) < tolerance);
+		}
+
+		function near_zero(x) {
+			return approx_eq(x, 0);
+		}
+
+		function newton_update(func, dfunc) {
+			function update(x) {
+				return x - (func(x) / dfunc(x));
+			}
+			return update;
+		}
+
+		function improve(update, close, guess=1, max_updates=100) {
+			for (i = 0; ((!close(guess)) && (i < max_updates)); i++) {
+				guess = update(guess);
+			}
+			return guess;
+		}
+		</script>
+	</body>
+</html>

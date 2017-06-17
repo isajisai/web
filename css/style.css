@@ -1,0 +1,52 @@
+/* CSS RESET
+
+* {
+	margin:0; padding:0;
+}
+
+*/
+
+body {
+	background: #ADD8E6;
+	font-family: : helvetica, sans-serif;
+}
+
+div {
+	width: 400px;
+	padding: 10px;
+	border: 10px solid black;
+	border-radius: 20px;
+	margin: 0 auto;
+	text-align: center;
+	text-decoration: none;
+	box-shadow: 4px 4px 10px gray;
+	color: rgb(300,0,200);
+}
+
+h2 {
+	color: #FF3232
+}
+
+.second-heading {
+	color: rgba(100, 0, 300, 0.75);
+}
+
+.underline {
+	text-decoration: underline;
+}
+
+.red-text {
+	color: solid red;
+}
+
+#logo {
+	/* MUST ONLY BE USED ONE PER PAGE: USUALLY USED FOR LOGOS */;
+	color solid blue;
+	font-style: bold;
+	font-family: "Shrikhand", sans-serif;
+}
+
+p {
+	font-family: helvetica, sans-serif;
+	font-size: 18px;
+}

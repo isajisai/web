@@ -1,0 +1,243 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Java Trivia</title>
+		<link href="../web/css/javaQuiz0.css" rel="stylesheet">
+	</head>
+	<body>
+		<h1>Java Interview Question Bash</h1>
+		<p>Do you like to sip on Java tea? Have a craving for OOP? Despise dynamic typing like the Plague? Odds are then, you are a Java developer. In that case, this is the right challenge for you!</p>
+		<p>These questions are derived from a blogpost by Sotirios-Efstathios Maneas, and reflect the <em>minimal</em> level of depth and breadth required of a Java developer. Expect to be able to do these problems with completion of 61B in addition to some outside Java experience and research
+
+		<input id="master" class="hidden" type="checkbox">
+		<label for="master" class="clicker" tabindex="1">(All)</label>
+		</p>
+
+		<h2>General Java Trivia</h2>
+
+		<div>
+			<strong>1. What is JVM? Why is Java called the “Platform Independent Programming Language”?</strong>
+			<input id="tog1" class="hidden" type="checkbox">
+			<label for="tog1" class="clicker" tabindex="1">(Toggle)</label>
+			<div class="hiddendiv">
+				<p>
+				Each Java source file is compiled into a bytecode file, which is executed by the JVM. Java was designed to allow application programs to be built that could be run on any platform, without having to be rewritten or recompiled by the programmer for each separate platform. A Java virtual machine makes this possible, because it is aware of the specific instruction lengths and other particularities of the underlying hardware platform.
+				</p>
+			</div>
+		</div>
+
+		<div>
+			<strong>2. What is the Difference between JDK and JRE?</strong>
+			<input id="tog2" class="hidden" type="checkbox">
+			<label for="tog2" class="clicker" tabindex="1">(Toggle)</label>
+			<div class="hiddendiv">
+				<p>
+				The Java Runtime Environment (JRE) is basically the Java Virtual Machine (JVM) where your Java programs are being executed. It also includes browser plugins for applet execution. The Java Development Kit (JDK) is the full featured Software Development Kit for Java, including the JRE, the compilers and tools (like <code>JavaDoc</code> and <code>Java Debugger</code>.
+				</p>
+			</div>
+		</div>
+
+		<div>
+			<strong>3. What does the “static” keyword mean? Can you override private or static method in Java?</strong>
+			<input id="tog3" class="hidden" type="checkbox">
+			<label for="tog3" class="clicker" tabindex="1">(Toggle)</label>
+			<div class="hiddendiv">
+				<p>
+				The static keyword denotes that a member variable or method can be accessed, without requiring an instantiation of the class to which it belongs. A user cannot override static methods in Java, because method overriding is based upon dynamic binding at runtime and static methods are statically binded at compile time. A static method is not associated with any instance of a class so the concept is not applicable.
+				</p>
+			</div>
+		</div>
+
+		<div>
+			<strong>4. Can you access non static variable in static context?</strong>
+			<input id="tog4" class="hidden" type="checkbox">
+			<label for="tog4" class="clicker" tabindex="1">(Toggle)</label>
+			<div class="hiddendiv">
+				<p>
+				A static variable in Java belongs to its class and its value remains the same for all its instances. A static variable is initialized when the class is loaded by the JVM. If your code tries to access a non-static variable, without any instance, the compiler will complain, because those variables are not created yet and they are not associated with any instance.
+				</p>
+			</div>
+		</div>
+
+		<div>
+			<strong>5. What are the Data Types supported by Java? What is Autoboxing and Unboxing?</strong>
+			<input id="tog5" class="hidden" type="checkbox">
+			<label for="tog5" class="clicker" tabindex="1">(Toggle)</label>
+			<div class="hiddendiv">
+				<p>
+				The eight primitive data types supported by the Java programming language are:
+				<ul>
+					<li>byte</li>
+					<li>short</li>
+					<li>int</li>
+					<li>long</li>
+					<li>float</li>
+					<li>double</li>
+					<li>boolean</li>
+					<li>char</li>
+				</ul>
+				<code>Autoboxing</code> is the automatic conversion made by the Java compiler between the primitive types and their corresponding object wrapper classes. For example, the compiler converts an int to an <code>Integer</code>, a double to a <code>Double</code>, and so on. If the conversion goes the other way, this operation is called <code>unboxing</code>.
+				</p>
+			</div>
+		</div>
+
+		<div>
+			<strong>6. What is Function Overriding and Overloading in Java?</strong>
+			<input id="tog6" class="hidden" type="checkbox">
+			<label for="tog6" class="clicker" tabindex="1">(Toggle)</label>
+			<div class="hiddendiv">
+				<p>
+				Method overloading in Java occurs when two or more methods in the same class have the exact same name, but different parameters. On the other hand, method overriding is defined as the case when a child class redefines the same method as a parent class. Overridden methods must have the same name, argument list, and return type. The overriding method may not limit the access of the method it overrides.
+				</p>
+			</div>
+		</div>
+
+		<div>
+			<strong>7. What is a Constructor, Constructor Overloading in Java and Copy-Constructor?</strong>
+			<input id="tog7" class="hidden" type="checkbox">
+			<label for="tog7" class="clicker" tabindex="1">(Toggle)</label>
+			<div class="hiddendiv">
+				<p>
+				A constructor gets invoked when a new object is created. Every class has a constructor. In case the programmer does not provide a constructor for a class, the Java compiler (Javac) creates a default constructor for that class. The constructor overloading is similar to method overloading in Java. Different constructors can be created for a single class. Each constructor must have its own unique parameter list. Finally, Java does support copy constructors like C++, but the difference lies in the fact that Java doesn’t create a default copy constructor if you don’t write your own.
+				</p>
+			</div>
+		</div>
+
+		<div>
+			<strong>8. Does Java support multiple inheritance?</strong>
+			<input id="tog8" class="hidden" type="checkbox">
+			<label for="tog8" class="clicker" tabindex="1">(Toggle)</label>
+			<div class="hiddendiv">
+				<p>
+				No, Java does not support multiple inheritance. Each class is able to extend only on one class, but is able to implement more than one interfaces.
+				</p>
+			</div>
+		</div>
+
+		<div>
+			<strong>9. What is the difference between an Interface and an Abstract class?</strong>
+			<input id="tog9" class="hidden" type="checkbox">
+			<label for="tog9" class="clicker" tabindex="1">(Toggle)</label>
+			<div class="hiddendiv">
+				<p>
+				Java provides and supports the creation both of abstract classes and interfaces. Both implementations share some common characteristics, but they differ in the following features:
+				<ul>
+					<li>All methods in an interface are implicitly abstract. On the other hand, an abstract class may contain both abstract and non-abstract methods.</li>
+					<li>A class may implement a number of Interfaces, but can extend only one abstract class.</li>
+					<li>In order for a class to implement an interface, it must implement all its declared methods. However, a class may not implement all declared methods of an abstract class. Though, in this case, the sub-class must also be declared as abstract.</li>
+					<li>Abstract classes can implement interfaces without even providing the implementation of interface methods.</li>
+					<li>Variables declared in a Java interface is by default final. An abstract class may contain non-final variables.</li>
+					<li>Members of a Java interface are public by default. A member of an abstract class can either be private, protected or public.</li>
+					<li>An interface is absolutely abstract and cannot be instantiated. An abstract class also cannot be instantiated, but can be invoked if it contains a main method.</li>
+				</ul>
+				</p>
+			</div>
+		</div>
+
+		<div>
+			<strong>10. What are pass by reference and pass by value?</strong>
+			<input id="tog10" class="hidden" type="checkbox">
+			<label for="tog10" class="clicker" tabindex="1">(Toggle)</label>
+			<div class="hiddendiv">
+				<p>
+				When an object is passed by value, this means that a copy of the object is passed. Thus, even if changes are made to that object, it doesn’t affect the original value. When an object is passed by reference, this means that the actual object is not passed, rather a reference of the object is passed. Thus, any changes made by the external method, are also reflected in all places.
+				</p>
+			</div>
+		</div>
+
+		<h2>Java Threads</h2>
+
+		<div>
+			<strong>11. What is the difference between processes and threads?</strong>
+			<input id="tog11" class="hidden" type="checkbox">
+			<label for="tog11" class="clicker" tabindex="1">(Toggle)</label>
+			<div class="hiddendiv">
+				<p>
+				A process is an execution of a program, while a <code>Thread</code> is a single execution sequence within a process. A process can contain multiple threads. A <code>Thread</code> is sometimes called a lightweight process.
+
+				</p>
+			</div>
+		</div>
+
+		<div>
+			<strong>12. Explain different ways of creating a thread. Which one would you prefer and why?</strong>
+			<input id="tog12" class="hidden" type="checkbox">
+			<label for="tog12" class="clicker" tabindex="1">(Toggle)</label>
+			<div class="hiddendiv">
+				<p>
+				There are three ways that can be used in order for a <code>Thread</code> to be created:
+				<ul>
+					<li>A class may extend the <code>Thread</code> class.</li>
+					<li>A class may implement the <code>Runnable</code> interface.</li>
+					<li>An application can use the <code>Executor</code> framework, in order to create a thread pool.</li>
+				</ul>
+				The <code>Runnable</code> interface is preferred, as it does not require an object to inherit the <code>Thread</code> class. In case your application design requires multiple inheritance, only interfaces can help you. Also, the thread pool is very efficient and can be implemented and used very easily.
+				</p>
+			</div>
+		</div>
+
+		<div>
+			<strong>13. Explain the available thread states in a high-level.</strong>
+			<input id="tog13" class="hidden" type="checkbox">
+			<label for="tog13" class="clicker" tabindex="1">(Toggle)</label>
+			<div class="hiddendiv">
+				<p>
+				During its execution, a thread can reside in one of the following states:
+				<ul>
+					<li><code>NEW</code>: The thread becomes ready to run, but does not necessarily start running immediately.</li>
+					<li><code>RUNNABLE</code>: The Java Virtual Machine (JVM) is actively executing the thread’s code.</li>
+					<li><code>BLOCKED</code>: The thread is in a blocked state while waiting for a monitor lock.</li>
+					<li><code>WAITING</code>: The thread waits for another thread to perform a particular action.</li>
+					<li><code>TIMED_WAITING</code>: The thread waits for another thread to perform a particular action up to a specified waiting time.</li>
+					<li><code>TERMINATED</code>: The thread has finished its execution.</li>
+				</ul>
+				</p>
+			</div>
+		</div>
+
+		<div>
+			<strong>14. What is the difference between a synchronized method and a synchronized block?</strong>
+			<input id="tog14" class="hidden" type="checkbox">
+			<label for="tog14" class="clicker" tabindex="1">(Toggle)</label>
+			<div class="hiddendiv">
+				<p>
+				In Java programming, each object has a lock. A thread can acquire the lock for an object by using the synchronized keyword. The synchronized keyword can be applied in a method level (coarse grained lock) or block level of code (fine grained lock).
+				</p>
+			</div>
+		</div>
+
+		<div>
+			<strong>15. How does thread synchronization occur inside a monitor ? What levels of synchronization can you apply?</strong>
+			<input id="tog15" class="hidden" type="checkbox">
+			<label for="tog15" class="clicker" tabindex="1">(Toggle)</label>
+			<div class="hiddendiv">
+				<p>
+				The JVM uses locks in conjunction with monitors. A monitor is basically a guardian that watches over a sequence of synchronized code and ensuring that only one thread at a time executes a synchronized piece of code. Each monitor is associated with an object reference. The thread is not allowed to execute the code until it obtains the lock.
+				</p>
+			</div>
+		</div>
+
+		<div>
+			<strong>16. What’s a deadlock?</strong>
+			<input id="tog16" class="hidden" type="checkbox">
+			<label for="tog16" class="clicker" tabindex="1">(Toggle)</label>
+			<div class="hiddendiv">
+				<p>
+				A condition that occurs when two processes are waiting for each other to complete, before proceeding. The result is that both processes wait endlessly.
+				</p>
+			</div>
+		</div>
+
+		<div>
+			<strong>17. How do you ensure that N threads can access N resources without deadlock?</strong>
+			<input id="tog17" class="hidden" type="checkbox">
+			<label for="tog17" class="clicker" tabindex="1">(Toggle)</label>
+			<div class="hiddendiv">
+				<p>
+				A very simple way to avoid deadlock while using N threads is to impose an ordering on the locks and force each thread to follow that ordering. Thus, if all threads lock and unlock the mutexes in the same order, no deadlocks can arise.
+				</p>
+			</div>
+		</div>
+
+	</body>
+</html>

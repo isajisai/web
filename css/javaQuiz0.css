@@ -1,0 +1,49 @@
+body {
+	background: white;
+}
+p {
+	width: 750px;
+}
+
+div {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", 
+		"Helvetica Neue", Helvetica, Arial, "Lucida Grande", 
+		sans-serif;
+	font-size: 14px;
+}
+
+.clicker {
+  	width: 10px;
+ 	height: 20px;
+  	background-color: white;
+	outline: none;
+  	cursor: pointer;
+  	color: black;
+  	display: block;
+}
+
+.hiddendiv {
+	display: none;
+	width: 750px;
+ 	overflow:auto;
+}
+
+input[id^="tog"]:checked + label + div {
+ 	display: block;
+}
+
+input#master:checked + label {
+	input[id^="tog"]:checked + label + div {
+ 		display: block;
+	}
+}
+
+.clicker:focus + .hiddendiv {
+  	display: block;
+}
+
+.hidden{
+  	margin-left: -99999px;
+}
+
+
